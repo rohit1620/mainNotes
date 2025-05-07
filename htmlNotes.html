@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Html Notes</title>
+  </head>
+  <body>
+    <!-- 🔹1. <a> – Anchor Tag
+        Use: Used to create hyperlinks to other web pages, files, or sections.
+        ✅ Example: -->
+    <a href="https://www.google.com">Visit Google</a>
+
+    <!-- 🔹2. <abbr> – Abbreviation Tag
+        Use: Shows the full form of an abbreviation when hovered over.
+        ✅ Example: -->
+    <abbr title="World Health Organization">WHO</abbr>
+
+    <!-- 🔹3. <area> – Image Map Area
+         Use: Defines a clickable area inside an image map. Used inside <map>.
+         ✅ Example: -->
+    <img src="image.jpg" usemap="#imagemap" />
+    <map name="imagemap">
+      <area shape="rect" coords="34,44,270,350" href="https://example.com" />
+    </map>
+
+    <!-- 🔹4. <audio> – Audio Embed
+        Use: Embeds audio content on the web page with optional controls.
+        ✅ Example: -->
+    <audio controls>
+      <source src="song.mp3" type="audio/mpeg" />
+      Your browser does not support the audio element.
+    </audio>
+
+    <!-- 🔹5. <b> – Bold Text
+        Use: Displays text in bold style without any added importance.
+        ✅ Example: -->
+    <b>This is bold text</b>
+
+    <!-- 🔹6. <blockquote> – Block Quotation
+        Use: Used to show long quotations from other sources.
+        ✅ Example: -->
+    <blockquote cite="https://www.example.com">
+      This is a quoted paragraph from another source.
+    </blockquote>
+
+    <!-- 🔹7. <body> – Web Page Body
+        Use: Contains all the visible content (text, images, buttons) of the web page.
+        ✅ Example: -->
+    <body>
+      <h1>Welcome to My Website</h1>
+      <p>This is the content inside the body tag.</p>
+    </body>
+
+    <!-- 🔹8. <br> – Line Break
+    Use: Inserts a line break (new line) in the text.
+    ✅ Example: -->
+    <p>This is the first line.<br />This is the second line.</p>
+
+    <!-- 🔹9. <button> – Clickable Button
+        Use: Creates a clickable button, often used in forms or interactive features.
+        ✅ Example: -->
+    <button type="button">Click Me</button>
+
+    <!-- 🔹10. <caption> – Table Caption
+        Use: Adds a title or label above a table.
+        ✅ Example: -->
+    <table border="1">
+      <caption>
+        Monthly Sales Report
+      </caption>
+      <tr>
+        <th>Month</th>
+        <th>Sales</th>
+      </tr>
+      <tr>
+        <td>January</td>
+        <td>₹10,000</td>
+      </tr>
+    </table>
+
+    <!-- 🔹11. <datalist> – Data List for Input Suggestions
+        Use: Provides a dropdown list of predefined options for an <input> field.
+        ✅ Example: -->
+    <label for="browser">Choose a browser:</label>
+    <input list="browsers" name="browser" id="browser" />
+
+    <datalist id="browsers">
+      <option value="Chrome"></option>
+      <option value="Firefox"></option>
+      <option value="Edge"></option>
+      <option value="Safari"></option>
+    </datalist>
+
+    <!-- 🔹12. <del> – Deleted Text
+        Use: Shows text that has been deleted, usually with a line through it.
+        ✅ Example: -->
+    <p>This item costs <del>₹1000</del> ₹800 only!</p>
+
+    <!-- 🔹13. <em> – Emphasized Text
+        Use: Highlights text with emphasis; usually displayed in italics.
+        ✅ Example: -->
+    <p>Please <em>read carefully</em> before submitting.</p>
+
+    <!-- 🔹14. <form> – Input Form
+        Use: Collects user input through various fields like textboxes, checkboxes, etc.
+        ✅ Example: -->
+    <form action="/submit" method="post">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" />
+      <button type="submit">Submit</button>
+    </form>
+
+    <!-- 🔹15. <h1> to <h6> – Headings
+        Use: Displays headings in decreasing size from <h1> (largest) to <h6> (smallest).
+        ✅ Example: -->
+    <h1>Main Heading</h1>
+    <h2>Sub Heading</h2>
+    <h3>Smaller Heading</h3>
+    <h4>Even Smaller</h4>
+    <h5>Tiny</h5>
+    <h6>Smallest</h6>
+
+    <!-- 🔹16. <head> – Document Head
+        Use: Contains metadata and links to stylesheets, scripts, etc. Not visible on the page.
+        ✅ Example: -->
+    <head>
+      <title>My Website</title>
+      <meta charset="UTF-8" />
+      <link rel="stylesheet" href="style.css" />
+    </head>
+
+    <!-- 🔹17. <hr> – Horizontal Line
+        Use: Inserts a horizontal line to separate content.
+        ✅ Example: -->
+    <p>Introduction</p>
+    <hr />
+    <p>Main Content</p>
+
+    <!-- 🔹18. <html> – HTML Root Element
+        Use: The root element that wraps the entire HTML document.
+        ✅ Example: -->
+    <!DOCTYPE html>
+    <html>
+      <head>
+        <title>Page Title</title>
+      </head>
+      <body>
+        <h1>Hello World</h1>
+      </body>
+    </html>
+
+    <!-- 🔹19. <i> – Italic Text
+        Use: Displays text in italic style (for visual emphasis, not meaning).
+        ✅ Example:    -->
+    <p>This is <i>italic</i> text.</p>
+
+    <!-- 🔹20. <img> – Image
+            Use: Embeds an image on the page using the src attribute.
+            ✅ Example: -->
+    <img src="image.jpg" alt="Description" width="300" />
+
+    <!-- 🔹21. <input> – User Input Field
+            Use: Allows the user to enter data. Can be of many types like text, number, email, etc.
+            ✅ Example: -->
+    <form>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" />
+    </form>
+
+    <!-- 🔹22. <ins> – Inserted Text
+            Use: Shows inserted or added text, often underlined.
+            ✅ Example: -->
+    <p>This item now costs <ins>₹750</ins>.</p>
+
+    <!-- 🔹23. <label> – Input Label
+            Use: Defines a label for an <input> element to improve accessibility and usability.
+            ✅ Example: -->
+    <form>
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" />
+    </form>
+
+    <!-- 🔹24. <link> – External Resource Link
+            Use: Links external resources like CSS stylesheets to the HTML document. Used inside <head>.
+            ✅ Example: -->
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- 🔹25. <mark> – Highlighted Text
+            Use: Highlights or marks part of the text (usually yellow).
+            ✅ Example: -->
+    <p>Please pay <mark>special attention</mark> to this point.</p>
+  </body>
+</html>
